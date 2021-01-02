@@ -9,17 +9,13 @@
   <h3 align="center">CrewLink</h3>
 
   <p align="center">
-    Free, open, Among Us proximity voice chat.
+    Free, open, Among Us proximity voice chat. Adapted from Ottomated's CrewLink to be made easier for a specific Discord server.
     <br />
     <a href="https://github.com/ottomated/CrewLink/issues">Report Bug</a>
     ·
     <a href="https://github.com/ottomated/CrewLink/issues">Request Feature</a>
     ·
     <a href="#installation"><b>INSTALLATION INSTRUCTIONS</b></a>
-  </p>
-  <p align="center">
-  <b><a href="https://paypal.me/ottomated">DONATE TO THE PROJECT</a></b>
-  (all donations will be used for server costs or paying for college)
   </p>
 </p>
 
