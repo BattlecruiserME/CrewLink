@@ -1,0 +1,21 @@
+matrix:
+  include:
+    - os: linux
+      language: node_js
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    - $HOME/.cache/electron
+    - $HOME/.cache/electron-builder
+
+script:
+  - |
+      yarn install;
+      yarn run publish;
+
+
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
