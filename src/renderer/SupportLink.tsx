@@ -6,14 +6,15 @@ import { shell } from 'electron';
 const SupportLink: React.FC = function () {
 	return (
 		<Typography align="center">
-			Need help?{' '}
+			Download it{' '}
 			<Link
 				href="#"
 				color="secondary"
-				onClick={() => shell.openExternal('https://discord.gg/fFurRtJsZj')}
+				onClick={() => shell.openExternal('https://voice.battlecruiser.cf/download')}
 			>
-				Get support
+				here
 			</Link>
+			.
 		</Typography>
 	);
 };
