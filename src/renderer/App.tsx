@@ -124,7 +124,7 @@ function App() {
 		microphone: 'Default',
 		speaker: 'Default',
 		pushToTalk: false,
-		serverURL: 'https://crewl.ink',
+		serverURL: 'https://voice.battlecruiser.cf',
 		pushToTalkShortcut: 'V',
 		deafenShortcut: 'RControl',
 		muteShortcut: 'RAlt',
@@ -241,7 +241,7 @@ function App() {
 							</DialogContent>
 							{updaterState.state === 'error' && (
 								<DialogActions>
-									<Button href="https://github.com/ottomated/CrewLink/releases/latest">
+									<Button href="https://github.com/BattlecruiserME/CrewLink/releases/latest">
 										Download Manually
 									</Button>
 								</DialogActions>

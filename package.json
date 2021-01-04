@@ -5,16 +5,11 @@
   "description": "Free, open, Among Us proximity voice chat",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ottomated/crewlink.git"
-  },
-  "funding": {
-    "type": "individual",
-    "url": "https://paypal.me/ottomated"
+    "url": "https://github.com/BattlecruiserME/crewlink.git"
   },
   "author": {
-    "name": "Ottomated",
-    "email": "otto@ottomated.net",
-    "url": "https://ottomated.net"
+    "name": "Battlecruiser",
+    "url": "https://battlecruiser.cf"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",

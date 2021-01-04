@@ -153,7 +153,7 @@ const store = new Store<ISettings>({
 		'1.1.5': (store) => {
 			const serverURL = store.get('serverURL');
 			if (serverURL === 'http://54.193.94.35:9736') {
-				store.set('serverURL', 'https://crewl.ink');
+				store.set('serverURL', 'https://voice.battlecruiser.cf');
 			}
 		},
 		'1.1.6': (store) => {
@@ -166,7 +166,7 @@ const store = new Store<ISettings>({
 		},
 		'1.2.0': (store) => {
 			if (store.get('serverURL') !== 'https://crewl.ink') {
-				store.set('serverURL', 'https://crewl.ink');
+				store.set('serverURL', 'https://voice.battlecruiser.cf');
 			}
 			// @ts-ignore
 			store.delete('offsets');
@@ -191,7 +191,7 @@ const store = new Store<ISettings>({
 		},
 		serverURL: {
 			type: 'string',
-			default: 'https://crewl.ink',
+			default: 'https://voice.battlecruiser.cf',
 			format: 'uri',
 		},
 		pushToTalkShortcut: {
@@ -346,8 +346,7 @@ const URLInput: React.FC<URLInputProps> = function ({
 						helperText={isValidURL ? '' : 'Invalid URL'}
 					/>
 					<Alert severity="error">
-						This option is for advanced users only. Other servers can steal your
-						info or crash CrewLink.
+						The server is automatically configured for you. It is highly recommended to not change it.
 					</Alert>
 					<Button
 						color="primary"
@@ -355,7 +354,7 @@ const URLInput: React.FC<URLInputProps> = function ({
 						onClick={() => {
 							setOpen(false);
 							setURLValid(true);
-							onValidURL('https://crewl.ink');
+							onValidURL('https://voice.battlecruiser.cf');
 						}}
 					>
 						Reset to default
