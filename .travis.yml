@@ -2,7 +2,8 @@ matrix:
   include:
     - os: linux
       language: node_js
-
+      node_js:
+        - lts/*
 cache:
   yarn: true
   directories:
