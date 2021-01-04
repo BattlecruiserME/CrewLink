@@ -1,9 +1,7 @@
-matrix:
-  include:
-    - os: linux
-      language: node_js
-      node_js:
-        - lts/*
+os: windows
+language: node_js
+node_js:
+   - lts/*
 cache:
   yarn: true
   directories:
