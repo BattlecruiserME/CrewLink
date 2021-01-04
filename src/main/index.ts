@@ -68,7 +68,7 @@ function createMainWindow() {
 			})
 		);
 	}
-	window.webContents.userAgent = `CrewLink/${crewlinkVersion} (${process.platform})`;
+	window.webContents.userAgent = `Battlecruiser CrewLink/${crewlinkVersion} (${process.platform})`;
 
 	window.on('closed', () => {
 		mainWindow = null;
