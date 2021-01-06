@@ -20,5 +20,7 @@ script:
 
 
 branches:
+  only:
+  - master
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
