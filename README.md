@@ -1,4 +1,4 @@
-[![GPL-3.0 License][license-shield]][license-url]
+[![GPL-3.0 License][license-shield]][license-url]                  [![Build Status](https://travis-ci.com/BattlecruiserME/CrewLink.svg?branch=master)](https://travis-ci.com/BattlecruiserME/CrewLink)
 
 <br />
 <p align="center">
