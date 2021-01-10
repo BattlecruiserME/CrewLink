@@ -1,6 +1,6 @@
-appId: net.ottomated.crewlink
-productName: CrewLink
-copyright: Copyright © 2020 Ottomated
+appId: cf.battlecruiser.crewlink
+productName: Battlecruiser CrewLink
+copyright: © Battlecruiser 2021
 directories:
   output: dist
   buildResources: resources

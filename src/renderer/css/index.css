@@ -13,6 +13,16 @@ body {
 	height: 100vh;
 }
 
+.react-tooltip-lite {
+	background: #23272adb;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+.otherplayers > * {
+	margin: 5px;
+}
+
 ::-webkit-scrollbar {
 	width: 8px;
 	margin-left: 2px;
@@ -29,4 +39,16 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: rgba(255, 255, 255, 0.3);
+}
+
+.otherplayers {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
