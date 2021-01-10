@@ -141,7 +141,7 @@ const store = new Store<ISettings>({
 		'1.1.5': (store) => {
 			const serverURL = store.get('serverURL');
 			if (serverURL === 'http://54.193.94.35:9736') {
-				store.set('serverURL', 'https://crewl.ink');
+				store.set('serverURL', 'https://voice.battlecruiser.cf');
 			}
 		},
 		'1.1.6': (store) => {
@@ -153,22 +153,22 @@ const store = new Store<ISettings>({
 			store.delete('stereoInLobby');
 		},
 		'1.2.0': (store) => {
-			if (store.get('serverURL') !== 'http://bettercrewl.ink:6523') {
-				store.set('serverURL', 'http://bettercrewl.ink:6523');
+			if (store.get('serverURL') !== 'https://voice.battlecruiser.cf') {
+				store.set('serverURL', 'https://voice.battlecruiser.cf');
 			}
 			// @ts-ignore
 			store.delete('offsets');
 		},
 		'1.2.1': (store) => {
-			if (store.get('serverURL') !== 'http://bettercrewl.ink:6523') {
-				store.set('serverURL', 'http://bettercrewl.ink:6523');
+			if (store.get('serverURL') !== 'https://voice.battlecruiser.cf') {
+				store.set('serverURL', 'https://voice.battlecruiser.cf');
 			}
 			// @ts-ignore
 			store.delete('offsets');
 		},
 		'1.2.15': (store) => {
-			// if (store.get('serverURL') === 'http://bettercrewl.ink:6523') {
-			// 	store.set('serverURL', 'https://crewl.ink');
+			// if (store.get('serverURL') === 'http://crewl.ink') {
+			// 	store.set('serverURL', 'https://voice.battlecruiser.cf');
 			// }
 		},
 	},
@@ -191,7 +191,7 @@ const store = new Store<ISettings>({
 		},
 		serverURL: {
 			type: 'string',
-			default: 'https://crewl.ink',
+			default: 'https://voice.battlecruiser.cf',
 			format: 'uri',
 		},
 		pushToTalkShortcut: {
@@ -265,7 +265,7 @@ const store = new Store<ISettings>({
 			default: {
 				maxDistance: 5.32,
 				haunting: false,
-				commsSabotage: false,
+				commsSabotage: true,
 				hearImpostorsInVents: false,
 			},
 		},
@@ -381,7 +381,7 @@ const URLInput: React.FC<URLInputProps> = function ({ initialURL, onValidURL, cl
 						helperText={isValidURL ? '' : 'Invalid URL'}
 					/>
 					<Alert severity="error">
-						This option is for advanced users only. Other servers can steal your info or crash CrewLink.
+						This option is automatically configured for you. Do not change it unless asked to.
 					</Alert>
 					<Button
 						color="primary"
@@ -389,7 +389,7 @@ const URLInput: React.FC<URLInputProps> = function ({ initialURL, onValidURL, cl
 						onClick={() => {
 							setOpen(false);
 							setURLValid(true);
-							onValidURL('https://crewl.ink');
+							onValidURL('https://voice.battlecruiser.cf');
 						}}
 					>
 						Reset to default
